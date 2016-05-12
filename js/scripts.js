@@ -95,10 +95,10 @@ $(document).ready(function ($) {
 					.css({"display": "block" });
 		});
 
-	$('.pyelp')
+	$('.potato')
 		.on('click', 
 			function(){
-				$('#pyelp-modal')
+				$('#potato-modal')
 					.css({"display": "block" });
 		});
 

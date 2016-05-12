@@ -229,10 +229,11 @@
                 </span>
                 <i class="fa fa-code" aria-hidden="true"></i>
               </div>  <!-- To-Do -->
-              <div class="port-box pyelp">
+              <div class="port-box potato">
                 <span class="by-line"> 
                   Hawt Potato
                 </span>
+                <i class="mean-icon"></i>
               </div>  <!-- Potato Yelp -->
             </div>    <!-- Port flex-box -->
           </div> <!-- Scroll Bar Inner -->
@@ -446,8 +447,20 @@
               <a href="http://codepen.io/TimArsen/pen/qZrZqm" target="_blank">
                 <h1>Weather App <i class="fa fa-codepen" aria-hidden="true"></i></h1>
               </a>
+              <div class="chrome-warning"></div>
               <div class="weather-container">
-                
+                <div id="loc">Boulder, US</div>
+				  <div class="weather-right">
+				    <div class="icon">
+				      <img id="icon" src="http://openweathermap.org/img/w/01d.png"/>
+				    </div>
+				    <div id="weather-description">clear sky</div>
+				  </div>
+				  <div class="temps">
+				    <div id="curTemp">70&degF</div>
+				    <span id="hiTemp">high: 76&degF</span> |  
+				    <span id="loTemp">Low: 64&degF</span>
+				  </div>
               </div>  <!-- Weather container -->
               <p>A portfolio project displaying the local weather through an API call to Openweather.org</p>
               <div class="skill-flex-box modal-flex">
@@ -496,16 +509,17 @@
             </div>  <!-- modal content -->
           </div>  <!-- To-do modal -->
 
-      <!-- Potato Yelp Modal -->
-          <div id="pyelp-modal" class="modal">
+      <!-- Potato  Modal -->
+          <div id="potato-modal" class="modal">
             <div class="modal-content">
               <span class="close">X</span>
               <a href="#" target="_blank">
                 <h1>Hawt Potato</h1>
               </a>
-              <div class="pyelp-container">
-                
-              </div>  <!-- pyelp container -->
+              <div class="potato-container">
+              	<span class="coming-soon">Hawt Potato Coming Soon!</span>
+                <img src="./assets/potato.png">
+              </div>  <!-- ppotato container -->
               <p>Hawt Potato is like yelp for potatoes, a MEAN stack web app with CRUD functionality and user auth that is sure to disrupt the potato rating industry. A collarborative effort with David Hughes and Drew Stonebraker</p>
               <div class="skill-flex-box modal-flex">
                 <div class="flex-box">
@@ -531,7 +545,7 @@
                 </div>  <!-- node -->
               </div>  <!-- skill flex-box -->
             </div>  <!-- modal content -->
-          </div>  <!-- pyelp modal -->
+          </div>  <!-- potato modal -->
 
     </section>
 
@@ -570,6 +584,8 @@
     <script type="text/javascript" src="./js/calc.js"></script>
     <!-- To-Do Script -->
     <script type="text/javascript" src="./js/to-do.js"></script>
+    <!-- To-Do Script -->
+    <script type="text/javascript" src="./js/weather.js"></script>
     <!-- Howler.js --
     <script type="text/javascript" src="./js/howler.min.js"></script>
     <!-- Paper.js --

@@ -414,6 +414,22 @@ h4 {
   background: url("../assets/todo.png");
   background-size: cover; }
 
+.potato {
+  background: url("../assets/potato.png");
+  background-color: grey;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain; }
+
+i.mean-icon {
+  background: url("../assets/MEAN-Icon.png");
+  background-size: contain;
+  background-position: center;
+  height: 1em;
+  width: 3em;
+  background-repeat: no-repeat;
+  background-color: rgba(255, 255, 255, 0.7); }
+
 .modal {
   display: none;
   position: fixed;
@@ -589,6 +605,60 @@ canvas {
   margin: auto;
   background: black; }
 
+.weather-container {
+  font-family: "Merriweather", serif;
+  max-width: 14em;
+  min-height: 10em;
+  margin: 0 auto;
+  background: #FFA400;
+  padding: 1em;
+  text-align: center;
+  border-radius: 0.5em; }
+  .weather-container #weather-description {
+    padding: 10px; }
+  .weather-container a {
+    color: grey;
+    cursor: pointer; }
+
+.weather-right {
+  background: #1460E2;
+  color: white;
+  float: right;
+  height: 6em;
+  width: 6em;
+  border-radius: 0.5em; }
+
+#weather {
+  float: right; }
+
+#loc {
+  margin: 10px;
+  font-size: 20px;
+  font-weight: 900;
+  padding: 0.3em;
+  border-radius: 0.5em;
+  background: rgba(255, 255, 255, 0.7); }
+
+.temps {
+  float: left;
+  padding: 1em;
+  margin-right: 1em;
+  height: 8em;
+  width: 8em;
+  font-size: 10px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 10px; }
+
+#curTemp {
+  padding: 10px;
+  font-weight: 900;
+  font-size: 20px; }
+
+.chrome-warning {
+  padding: 0.5em;
+  border-radius: 0.5em;
+  display: none; }
+
 .to-do-container {
   font-family: Roboto;
   text-shadow: none; }
@@ -644,6 +714,20 @@ canvas {
   .to-do-container .completed {
     color: gray;
     text-decoration: line-through; }
+
+.potato-container {
+  position: relative; }
+  .potato-container img {
+    margin: 0 auto;
+    display: block; }
+
+.coming-soon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: orange;
+  padding: 0.5em; }
 
 #contact .tab {
   top: 50vh; }

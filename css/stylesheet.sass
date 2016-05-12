@@ -20,6 +20,8 @@ $calc: url('../assets/calc.png')
 $sound: url('../assets/sound.png')
 $weather: url('../assets/weather.png')
 $to-do: url('../assets/todo.png')
+$potato: url('../assets/potato.png')
+$mean-icon: url('../assets/MEAN-Icon.png')
 
 $break-small: 450px
 
@@ -437,6 +439,20 @@ h4
 .to-do
   background: $to-do
   background-size: cover
+.potato
+  background: $potato
+  background-color: grey
+  background-repeat: no-repeat
+  background-position: center
+  background-size: contain
+i.mean-icon
+  background: $mean-icon    
+  background-size: contain
+  background-position: center
+  height: 1em
+  width: 3em
+  background-repeat: no-repeat
+  background-color: $white
 
 
 // MODALS
@@ -619,6 +635,63 @@ canvas
   margin: auto
   background: black
 
+//  Weather App Modal
+//==============================================
+
+.weather-container  
+  font-family: 'Merriweather', serif
+  max-width: 14em
+  min-height: 10em
+  margin: 0 auto
+  background: #FFA400
+  padding: 1em
+  text-align: center
+  border-radius: .5em
+  #weather-description 
+    padding: 10px
+  a
+    color: grey
+    cursor: pointer
+
+.weather-right
+  background: #1460E2
+  color: white
+  float: right
+  height: 6em
+  width: 6em
+  border-radius: .5em
+  
+#weather
+  float: right
+
+#loc 
+  margin: 10px
+  font-size: 20px
+  font-weight: 900
+  padding: .3em
+  border-radius: .5em
+  background: rgba(255,255,255,.7)
+
+.temps 
+  float: left
+  padding: 1em
+  margin-right: 1em
+  height: 8em
+  width: 8em
+  font-size: 10px
+  background-color: rgba(255,255,255,.7)
+  border-radius: 10px
+
+#curTemp 
+  padding: 10px
+  font-weight: 900
+  font-size: 20px
+
+.chrome-warning
+  padding: .5em
+  border-radius: .5em
+  display: none 
+
 //  To-Do Modal
 //==============================================
 
@@ -677,6 +750,24 @@ canvas
   .completed
     color: gray
     text-decoration: line-through
+
+//  Potato Modal
+//==============================================
+
+.potato-container
+  position: relative
+  img
+    margin: 0 auto
+    display: block
+
+.coming-soon
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+  background: orange
+  padding: .5em
+
 
 
 //  Contact Tab
