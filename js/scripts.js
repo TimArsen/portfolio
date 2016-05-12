@@ -25,32 +25,6 @@ $(document).ready(function ($) {
 	        showCursor: false
     });
 
- 	$("#skills")
- 		.on("click", 
- 			function(){
-		 		$(".front-end > .skill-title")
-		 			.typed({
-				 		strings: ["Front End"],
-				        typeSpeed: 5,
-				        startDelay: 2000,
-				        showCursor: false
-		    });
-	 			$(".mean-stack > .skill-title")
-	 			.typed({
-			 		strings: ["MEAN Stack"],
-			        typeSpeed: 5,
-			        startDelay: 3000,
-			        showCursor: false
-		    });
-	 			$(".etc-skills > .skill-title")
-	 			.typed({
-			 		strings: ["And more..."],
-			        typeSpeed: 5,
-			        startDelay: 4000,
-			        showCursor: false
-		    });
- 		});
-
  	$('.port-box')
 		.on('click', 
 			function(){
