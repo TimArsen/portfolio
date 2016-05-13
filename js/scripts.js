@@ -1,12 +1,14 @@
 $(document).ready(function ($) {
 
+	setTimeout(function(){		
 	$('body').toggleClass('loaded');
+	}, 2000);
 
 	$(".description")
 		.typed({
 		    strings: ["Front-End", "Back-End", "MEAN stack", "Full-Stack Web Developer."],
 		    typeSpeed: 40,
-		    startDelay: 1000,
+		    startDelay: 3000,
 		    showCursor: false
 		});
 
