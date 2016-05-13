@@ -2,6 +2,8 @@ $green: rgb(70,108,93)
 $red: rgb(213,57,45)
 $white: rgba(255,255,255,.7)
 $grey: rgba(150,150,150,.9)
+$brown: #D0AF86
+$darkbrown: #5D3B12
 $org: #FF7F3A
 $orgdark: #FF5900
 
@@ -132,6 +134,9 @@ h4
   background: $white
   padding: 2em
   border-radius: 1em
+  width: 12em
+  height: 4em
+
 
 .desc-holder
   height: 1em
@@ -163,10 +168,10 @@ h4
 .hidden-scrollbar 
   overflow: hidden
   margin-top: 5vh
+  padding-left: 1em
 
 .hidden-scrollbar .inner 
   overflow: auto
-  margin-left: 5vw
   margin-right: -300px
   padding-right: 300px
   max-height: 95vh
@@ -191,6 +196,20 @@ h4
     border-radius: 15% 15% 0 0 
     border-left: none
     left: -3.4em
+
+.tab-title  
+  text-align: center
+  font-size: 2em
+  font-family: $mainFont
+  position: relative
+  left: 50%
+  transform: translate(-50%)
+  z-index: 4
+  background-color: $brown
+  border: 1px solid $darkbrown
+  padding: .2em .5em
+  border-radius: .5em
+  max-width: 600px
 
 .rotate
   @media screen and (max-height: $break-small)
@@ -243,14 +262,15 @@ h4
     @media screen and (min-height: $break-small)
       top: 10vh
 .abtflex
-  margin: 0 5vw
+  margin: 0 auto
   margin-bottom: 10vh
   display: flex
   flex-flow: row wrap
   justify-content: space-around
   align-content: center
-  align-items: center
+  align-items: flex-start
   height: 100%
+  max-width: 600px
 #bio
   width: 320px
   padding: 5px
@@ -261,6 +281,7 @@ h4
   
 #picture    
   height: 50vh
+  width: 50vh
   max-height: 20em
   max-width: 90vw
   min-width: 38vw
@@ -290,6 +311,7 @@ h4
       top: 34vh
 .wrapper
   margin: 3em 5em
+
 
 .skill-flex-box
   max-width: 600px
@@ -452,7 +474,7 @@ i.mean-icon
   height: 1em
   width: 3em
   background-repeat: no-repeat
-  background-color: $white
+  background-color: white
 
 
 // MODALS

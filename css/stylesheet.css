@@ -98,7 +98,9 @@ h4 {
 .kicker-title {
   background: rgba(255, 255, 255, 0.7);
   padding: 2em;
-  border-radius: 1em; }
+  border-radius: 1em;
+  width: 12em;
+  height: 4em; }
 
 .desc-holder {
   height: 1em;
@@ -127,11 +129,11 @@ h4 {
 
 .hidden-scrollbar {
   overflow: hidden;
-  margin-top: 5vh; }
+  margin-top: 5vh;
+  padding-left: 1em; }
 
 .hidden-scrollbar .inner {
   overflow: auto;
-  margin-left: 5vw;
   margin-right: -300px;
   padding-right: 300px;
   max-height: 95vh; }
@@ -157,6 +159,20 @@ h4 {
       border-radius: 15% 15% 0 0;
       border-left: none;
       left: -3.4em; } }
+
+.tab-title {
+  text-align: center;
+  font-size: 2em;
+  font-family: "IM Fell English SC", serif;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 4;
+  background-color: #D0AF86;
+  border: 1px solid #5D3B12;
+  padding: 0.2em 0.5em;
+  border-radius: 0.5em;
+  max-width: 600px; }
 
 @media screen and (max-height: 450px) {
   .rotate {
@@ -208,14 +224,15 @@ h4 {
       top: 10vh; } }
 
 .abtflex {
-  margin: 0 5vw;
+  margin: 0 auto;
   margin-bottom: 10vh;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
   align-content: center;
-  align-items: center;
-  height: 100%; }
+  align-items: flex-start;
+  height: 100%;
+  max-width: 600px; }
 
 #bio {
   width: 320px;
@@ -226,6 +243,7 @@ h4 {
 
 #picture {
   height: 50vh;
+  width: 50vh;
   max-height: 20em;
   max-width: 90vw;
   min-width: 38vw;
@@ -428,7 +446,7 @@ i.mean-icon {
   height: 1em;
   width: 3em;
   background-repeat: no-repeat;
-  background-color: rgba(255, 255, 255, 0.7); }
+  background-color: white; }
 
 .modal {
   display: none;
